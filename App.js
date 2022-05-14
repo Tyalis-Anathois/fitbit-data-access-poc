@@ -1,6 +1,8 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 
+import ConnectionStatusViewer from './components/ConnectionStatusViewer/ConnectionStatusViewer'
+
 export default function App() {
   return (
     <View style={styles.container}>
@@ -9,6 +11,8 @@ export default function App() {
       <Text>Follow steps from : https://reactnative.dev/docs/environment-setup</Text>
       <Text>Expo infos : https://expo.dev/</Text>
       <StatusBar style="auto" />
+
+      <ConnectionStatusViewer />
     </View>
   );
 }
